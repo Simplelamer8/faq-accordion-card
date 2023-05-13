@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root 
+{
+    /*text*/
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+    - Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+    /*dividers*/
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+    /*Background gradient:*/
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-size: 12px;
+    background: linear-gradient(var(--Soft-violet), var(--Soft-blue));
+    font-family: 'Kumbh Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main 
+{
+    background-color: #fff;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    height: 30rem;
+    z-index: 4;
+    position: absolute;
+}
+.left 
+{
+    overflow: hidden;
+    position: relative;
+    min-height: 100%;
+    min-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right
+{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    min-width: 50%;
+}
+.right
+{
+    max-height: 100%;
+}
+.right h1 
+{
+    margin-bottom: 2rem;
+}
+.box 
+{
+    z-index: 5;
+    position: absolute;
+    left: -6rem;
+    top: 12rem;
+    max-width: 100%;
+}
+.mbwoman
+{
+    display: none;
+}
+.mbback
+{
+    display: none;
+}
+.woman
+{
+    position: absolute;
+    z-index: -1;
+    left: -4rem;
+    max-width: 100%;
+}
+.backwoman 
+{
+    z-index: -2;
+    position: absolute;
+    right: 0rem;
+    top: -16rem;
+}
+.question
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.5px solid var(--Light-grayish-blue);
+    width: 70%;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+.click 
+{
+    cursor: pointer;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    justify-content: space-between;
+    font-size: 14px;
+    border: none;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: #fff;
+    color: var(--Dark-grayish-blue);
+}
+.click:hover
+{
+    color: var(--Soft-red);
+}
+ul 
+{
+    line-height: 4rem;
+    list-style-type: none;
+}
+.off 
+{
+    display: none;
+}
+.on 
+{
+    margin-top: 1rem;
+    color: var(--Dark-grayish-blue);
+    line-height: 1rem;
+    margin-bottom: 0.5rem;
+}
+.attribution 
+{ 
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a 
+{ 
+    color: hsl(228, 45%, 44%); 
+}
+@media screen and (max-width: 773px)
+{
+    .mbwoman
+    {
+        display: block;
+        position: absolute;
+        top: -115%;
+        z-index: -1;
+        width: 50%;
+    }
+    .mbback
+    {
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: -30%;
+        width: 50%;
+    }
+    .left 
+    {
+        overflow: visible;
+        min-height: 30%;
+        width: 100%;
+    }
+    .right
+    {
+        position: relative;
+        top: -10%;
+        height: 50%;
+        width: 100%;
+        align-items: center;
+    }
+    .question
+    {
+        width: 100%;
+    }
+    ul 
+    {
+        width: 80%;
+    }
+    main 
+    {
+        flex-direction: column;
+    }
+    .woman 
+    {
+        display: none;
+    }
+    .backwoman
+    {
+        display: none;
+    }
+    .box 
+    {
+        display: none;
+    }
+}
+@media screen and (max-width: 700px)
+{
+    .mbwoman
+    {
+        top: -100%;
+    }
+}
+@media screen and (max-width: 500px)
+{
+    .mbwoman
+    {
+        top: -80%;
+    }
+}
+@media screen and (max-width: 350px)
+{
+    .mbwoman
+    {
+        top: -70%;
+    }
+}
+@media screen and (max-width: 1200px)
+{
+    .box 
+    {
+        max-width: 25%;
+    }
+}
